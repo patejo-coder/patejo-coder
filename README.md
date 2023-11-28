@@ -1,7 +1,8 @@
 <div>
 <h3 align="left">Hello everyone, My name is Matheus Cardoso also know as @patejo-coder, and i´m a brazilian student of progamation.</h3>
 </div>
-<div align="center">
+  <br><br><br>
+<div>
 I’m so much interested Tecnology area and i wanna be a web developer, in the moment i´m estudy for accomplish this goal in one future not so far i will be arrived there.
 </div>
   <br><br><br>
