@@ -32,17 +32,6 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-/*
-
-section#container-tudo {
-    display: flex;
-    flex-direction: column;
-    width: 1350px;
-    height: 830px;
-}
-
-*/
-
 /*Estilização Header*/
 header {
     display: flex;
@@ -119,12 +108,13 @@ nav li a {
     text-decoration: none;
     text-transform: uppercase;
     border: 2px dashed white;
-    transition: 1s;
+    transition: .5s;
 }
 
 nav #cor1 {
-    color: rgba(0,255,255);
+    color: var(--texto);
     font-weight: 500;
+    font-size: 17px;
 }
 
 nav #cor2:hover {
@@ -161,7 +151,7 @@ section#principal {
     font-weight: 700;
     font-size: 100px;
     margin: 60px 0px 30px -8px;
-    text-shadow: -5px 6px 1px #fff000;
+    text-shadow: -6px 7px 1px #fff000;
 }
 
 #principal h3 {
@@ -198,13 +188,15 @@ section#botoes {
     margin-bottom: 45px;
 }
 
-#botoes div {
+#botoes button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 145px;
     height: 40px;
     border-radius: 40px;
+    outline: none;
+    cursor: pointer;
 }
 
 #botoes #b1 {
@@ -213,6 +205,13 @@ section#botoes {
     color: rgba(255,255,255);
     border: 2px solid cyan;
     transition: 1s;
+}
+
+#botoes #b1::after {
+    content: "Currículo";
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 #botoes #b1:hover {
@@ -228,15 +227,16 @@ section#botoes {
     transition: 1s;
 }
 
-#botoes #b2:hover {
-background-color: rgb(0,0,0);
-color: rgb(255,255,255);
-}
-
-#botoes p {
+#botoes #b2::after {
+    content: "Projeto";
     font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
+}
+
+#botoes #b2:hover {
+background-color: rgb(0,0,0);
+color: rgb(255,255,255);
 }
 
 /*Estilização aside*/
@@ -260,15 +260,25 @@ section#cartao {
     background-color: #fff000;
 }
 
-#cartao img {
+#cartao div#area-img {
     width: 200px;
     height: 180px;
-    border-radius: 100%;
+    border-radius: 25px;
     margin: 15px 0px 10px 0px;
+    border: 3px solid black;
     transition: 1s;
 }
 
-#cartao img:hover {
+#area-img span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;   
+    border-radius: 21px;
+    background-repeat: no-repeat;
+    background-image: url("./images/pc-version.jpg");
+}
+
+#cartao #area-img:hover {
     scale: 1.05;
 }
 
@@ -390,7 +400,7 @@ color: rgb(40, 225, 230);
     body {
         display: flex;
         flex-direction: column;
-        max-width: 375px;
+        max-width: 100vw;
         overflow-x: visible;
     }
 
@@ -401,8 +411,7 @@ color: rgb(40, 225, 230);
         justify-content: center;
         align-items: center;
         position: static;
-        bottom: 100px;
-        height: 150px;
+        height: 170px;
         box-shadow: none;
     }
 
@@ -412,7 +421,7 @@ color: rgb(40, 225, 230);
         align-items: center;
         width: 100%;
         margin: 0px 0px 0px 0px;
-        padding: 15px 0px 20px 0px;
+        padding: 20px 0px 30px 0px;
         background-color: var(--amarelo);
     }
     
@@ -424,7 +433,7 @@ color: rgb(40, 225, 230);
         font-family: "Montserrat Alternates", sans-serif;
         font-size: 22px;
         font-weight: 700;
-        margin-right: 0px;
+        margin: 5px 0px 0px 0px;
     }
     
     hgroup h5:hover {
@@ -435,8 +444,13 @@ color: rgb(40, 225, 230);
         font-family: "Monteserrat", sans-serif;
         font-weight: 400;
         font-size: 17px;
-        margin-top: 0px;
+        margin-top: 5px;
     }
+
+    hgroup h6:before {
+        display: none;
+    }
+
     #elemento-1 {
         width: 150px;
         height: 5px;
@@ -451,11 +465,7 @@ color: rgb(40, 225, 230);
         margin-top: -2px;
         border-radius: 5px;
     }
-
-    hgroup h6:before {
-        display: none;
-    }
-
+    
     nav {
         width: 100vw;
         height: 80px;
@@ -474,7 +484,7 @@ color: rgb(40, 225, 230);
     }
     
     header li a {
-        padding: 5px;
+        padding: 7px;
         border-radius: 5px;
         border: 0px;
     }
@@ -482,7 +492,8 @@ color: rgb(40, 225, 230);
     header #cor1 {
         color: #ffffff;
         font-weight: 700;
-        background-color: var(--ciano);
+        background-color: rgba(0,255,255,.6);
+        font-size: 12px;
     }
 
     header #cor2 {
@@ -558,7 +569,7 @@ color: rgb(40, 225, 230);
         margin-bottom: 70px;
     }
     
-    #botoes div {
+    #botoes button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -566,19 +577,43 @@ color: rgb(40, 225, 230);
         height: 35px;
         border-radius: 40px;
     }
-    
-    #botoes p {
-        font-weight: 500;
-        font-size: 15px;
-        text-transform: uppercase;
+
+    #botoes #b1 {
+        border: 2px solid rgba(0,0,0);
+        background-color: rgba(255,255,255);
+        color: rgba(0,0,0);
+    }
+
+    #botoes #b1::after {
+        content: "Projeto";
     }
     
+    #botoes #b1:hover {
+        background-color: rgb(0,0,0);
+        color: rgb(255,255,255);
+    }
+    
+    #botoes #b2 {
+        background-color: rgba(0,255,255);
+        color: rgba(255,255,255);
+        border: 2px solid cyan;
+    }
+    
+    #botoes #b2::after {
+        content: "Currículo";   
+    }
+
+    #botoes #b2:hover {
+        background-color: rgb(255,255,255);
+        color: rgb(0,255,255);
+    }
+
 /*Formatação do Aside*/
     aside {
         display: flex;
         justify-content: center;
         margin-top: 80px;
-        width: 100%;
+        width: 100vw;
         height: 211px;
         background-color: var(--amarelo); 
         box-shadow: 0px 3px 4px rgba(0,0,0,.6);   
@@ -598,25 +633,22 @@ color: rgb(40, 225, 230);
         height: 246px;
         background-color: var(--ciano);
     }
-    
-    #cartao img {
+
+    #cartao div#area-img {
         width: 118px;
         height: 106px;
-        border-radius: 22px;
-        margin: 20px 0px 5px 0px;
-        transition: 1s;
-        border: 1px solid black;
+        margin-top: 25px;
     }
     
-    #cartao img:hover {
-        scale: 1.05;
+    #area-img span {
+        background-image: url("./images/mobile-version.jpg");
     }
-    
+
     #cartao h3 {
         font-size: 20px;
         font-weight: 600;
         text-align: center;
-        margin: 20px 0px 20px 0px;
+        margin: 15px 0px 20px 0px;
     }
     
     #cartao #traco {
@@ -653,10 +685,11 @@ color: rgb(40, 225, 230);
     }
 
     footer {
-        margin-top: 200px;
         display: flex;
         justify-content: space-between;
         height: 80px;
+        width: 100vw;
+        margin-top: 200px;
         background-color: var(--amarelo);
     }
     
@@ -674,7 +707,7 @@ color: rgb(40, 225, 230);
         display: flex;
         align-items: center;
         gap: 0px;
-        margin-right: 18px;
+        margin-right: 25px;
         margin-top: 10px;
     }
     
