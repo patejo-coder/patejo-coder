@@ -158,7 +158,7 @@ section#botoes {
 }
 
 #botoes #b2::after {
-    content: "Projeto";
+    content: "Projetos";
     font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
@@ -270,7 +270,7 @@ section#rodape-cartao {
     nav #cor1 {
         color: #ffffff;
         font-weight: 700;
-        background-color: rgba(0, 255, 255, .6);
+        background-color: var(--texto);
         font-size: 12px;
     }
 
@@ -278,7 +278,7 @@ section#rodape-cartao {
         color: #ffffff;
         opacity: 60%;
         transition: .5s;
-        background-color: rgb(0, 188, 0);
+        background-color: var(--ciano);
     }
 
     nav #cor3 {
@@ -311,10 +311,6 @@ section#rodape-cartao {
         color: #ffffff;
         opacity: 100%;
         border-bottom: 0px;
-    }
-
-    footer {
-        background-color: var(--amarelo);
     }
 
     /*Conteudo Central*/
@@ -365,36 +361,6 @@ section#rodape-cartao {
         width: 130px;
         height: 35px;
         border-radius: 40px;
-    }
-
-    #botoes #b1 {
-        border: 2px solid rgba(0, 0, 0);
-        background-color: rgba(255, 255, 255);
-        color: rgba(0, 0, 0);
-    }
-
-    #botoes #b1::after {
-        content: "Projeto";
-    }
-
-    #botoes #b1:hover {
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-    }
-
-    #botoes #b2 {
-        background-color: rgba(0, 255, 255);
-        color: rgba(255, 255, 255);
-        border: 2px solid cyan;
-    }
-
-    #botoes #b2::after {
-        content: "Currículo";
-    }
-
-    #botoes #b2:hover {
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 255, 255);
     }
 
     /*Formatação do Aside*/
@@ -471,5 +437,9 @@ section#rodape-cartao {
     #rodape-cartao img:hover {
         opacity: 100%;
         scale: 1.3;
+    }
+
+    footer {
+        background-color: var(--amarelo);
     }
 }

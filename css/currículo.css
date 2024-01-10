@@ -16,16 +16,16 @@ hgroup h5:hover {
     color: rgba(0, 255, 255);
 }
 
-nav #cor2 {
-    color: var(--texto);
-    font-weight: 600;
-    font-size: 16px;
-}
-
 nav #cor1:hover {
     color: var(--texto);
     font-weight: 500;
     border-bottom: 2px dashed var(--texto);
+}
+
+nav #cor2 {
+    color: var(--texto);
+    font-weight: 600;
+    font-size: 16px;
 }
 
 nav #cor3:hover {
@@ -156,7 +156,6 @@ div#b4:hover {
 #titulo h1:hover {
     background-color: white;
     color: var(--ciano);
-    border: none;
 }
 
 
@@ -357,7 +356,7 @@ section#botao-pdf {
     nav #cor1 {
         color: #ffffff;
         opacity: 60%;
-        background-color: rgba(0, 255, 255, .6);
+        background-color: var(--texto);
     }
 
     nav #cor2 {
@@ -455,15 +454,12 @@ section#botao-pdf {
     div#b1 {
         border: 3px solid purple;
     }
-
     div#b2 {
         border: 3px solid black;
     }
-
     div#b3 {
         border: 3px solid red;
     }
-
     div#b4 {
         border: 3px solid cyan;
     }
@@ -486,22 +482,14 @@ section#botao-pdf {
         text-transform: uppercase;
         color: white;
         padding: 25px 55px;
-        margin-left: -15px;
         border: 5px solid white;
         transition: 1s;
-    }
-
-    #titulo h1:hover {
-        background-color: white;
-        color: var(--ciano);
-        border: none;
     }
 
     main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: -15px;
     }
 
     /*Tamanho das sessões*/
