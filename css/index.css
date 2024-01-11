@@ -345,7 +345,196 @@ section#rodape-cartao {
         font-size: 13px;
         font-weight: 300;
         line-height: 25px;
-        margin: 0px 15px 55px 14px;
+        margin: 0px 10px 55px 20px;
+    }
+
+    section#botoes {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 70px;
+    }
+
+    #botoes button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 35px;
+        border-radius: 40px;
+    }
+
+    /*Formatação do Aside*/
+    aside {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        width: 100vw;
+        height: 211px;
+        background-color: var(--amarelo);
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, .6);
+    }
+
+    div#juncao-cartao {
+        width: 229px;
+        margin-top: -35px;
+        margin-left: 0px;
+        scale: 1;
+    }
+
+    section#cartao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 246px;
+        background-color: var(--ciano);
+    }
+
+    #cartao div#area-img {
+        width: 118px;
+        height: 106px;
+        margin-top: 25px;
+    }
+
+    #area-img span {
+        background-image: url("../images/mobile-version.jpg");
+    }
+
+    #cartao h3 {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin: 15px 0px 20px 0px;
+    }
+
+    #cartao #traco {
+        width: 60px;
+        height: 4px;
+        margin-bottom: 15px;
+        background-color: rgba(0, 0, 0);
+    }
+
+    #cartao p {
+        font-size: 13px;
+    }
+
+    section#rodape-cartao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 42px;
+        gap: 19px;
+        background-color: rgba(255, 255, 255);
+    }
+
+    #rodape-cartao img {
+        width: 22px;
+        height: 22px;
+        margin-top: 5px;
+        opacity: 60%;
+        transition: 1s;
+    }
+
+    #rodape-cartao img:hover {
+        opacity: 100%;
+        scale: 1.3;
+    }
+
+    footer {
+        background-color: var(--amarelo);
+    }
+}
+
+@media screen and (min-width:377px) and (max-width:415px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+        overflow-x: visible;
+    }
+
+    header hgroup {
+        background-color: var(--amarelo);
+    }
+
+    nav #cor1 {
+        color: #ffffff;
+        font-weight: 700;
+        background-color: var(--texto);
+        font-size: 12px;
+    }
+
+    nav #cor2 {
+        color: #ffffff;
+        opacity: 60%;
+        transition: .5s;
+        background-color: var(--ciano);
+    }
+
+    nav #cor3 {
+        color: #ffffff;
+        opacity: 60%;
+        transition: .5s;
+        background-color: rgba(255, 0, 0);
+    }
+
+    nav #cor4 {
+        color: #ffffff;
+        opacity: 60%;
+        transition: .5s;
+        background-color: purple;
+    }
+
+    header nav #cor2:hover {
+        color: #ffffff;
+        opacity: 100%;
+        border-bottom: 0px;
+    }
+
+    header nav #cor3:hover {
+        color: #ffffff;
+        opacity: 100%;
+        border-bottom: 0px;
+    }
+
+    header nav #cor4:hover {
+        color: #ffffff;
+        opacity: 100%;
+        border-bottom: 0px;
+    }
+
+    /*Conteudo Central*/
+    main {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 90px 0px 0px 0px;
+    }
+
+    section#principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 25px 0px 25px;
+    }
+
+    #principal h1 {
+        font-size: 50px;
+        margin: 0px 0px 43px 0px;
+        text-shadow: none;
+    }
+
+    #principal h3 {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0px 30px 55px 30px;
+    }
+
+    #principal #texto {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 25px;
+        margin: 0px 10px 55px 10px;
     }
 
     section#botoes {
