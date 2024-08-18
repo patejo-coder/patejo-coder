@@ -11,8 +11,6 @@
 body {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    overflow-x: hidden;
 }
 
 hgroup #caixinha {
@@ -24,26 +22,21 @@ hgroup h5:hover {
 }
 
 nav #cor1:hover {
-    color: var(--texto);
-    font-weight: 500;
     border-bottom: 2px dashed var(--texto);
 }
 
 nav #cor2:hover {
     color: var(--ciano);
-    font-weight: 500;
     border-bottom: 2px dashed var(--ciano);
 }
 
 nav #cor3 {
-    color: var(--texto);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 nav #cor4:hover {
     color: purple;
-    font-weight: 500;
     border-bottom: 2px dashed purple;
 }
 
@@ -180,10 +173,6 @@ figure.foto-legenda:hover figcaption {
     transition: 1s;
 }
 
-#pessoais figure:hover figcaption {
-    opacity: 0;
-}
-
 #pessoais img {
     height: 100%;
     width: 100%;
@@ -199,11 +188,15 @@ figure.foto-legenda:hover figcaption {
     width: 100%;
     height: 100%;
     top: 0px;
-    opacity: 1;
+    opacity: 100%;
     transition: 1s;
     cursor: default;
     border: 3px solid white;
     background-color: rgba(0, 0, 0, .5);
+}
+
+#pessoais figure:hover figcaption {
+    opacity: 0%;
 }
 
 #pessoais figcaption h1 {
@@ -242,30 +235,29 @@ figure.foto-legenda:hover figcaption {
         color: black;
     }
 
-    nav #cor1 {
+    nav #cor3 {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 13px;
+        background-color: rgba(255, 0, 0);
+    }
+
+    nav #cor1, #cor2, #cor4 {
         color: #ffffff;
         opacity: 60%;
+        transition: .5s;
+        font-size: 11px;
+    }
+
+    nav #cor1 {
         background-color: var(--texto);
     }
 
     nav #cor2 {
-        color: #ffffff;
-        opacity: 60%;
         background-color: var(--ciano);
     }
 
-    nav #cor3 {
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 12px;
-        transition: .5s;
-        background-color: rgba(255, 0, 0);
-    }
-
     nav #cor4 {
-        color: #ffffff;
-        opacity: 60%;
-        transition: .5s;
         background-color: purple;
     }
 
@@ -289,10 +281,6 @@ figure.foto-legenda:hover figcaption {
 
     footer {
         background-color: red;
-    }
-
-    body {
-        overflow-x: scroll;
     }
 
     hgroup #caixinha {

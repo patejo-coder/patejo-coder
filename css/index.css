@@ -21,7 +21,6 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 100vw;
-    overflow-x: hidden;
 }
 
 hgroup #caixinha {
@@ -40,26 +39,22 @@ hgroup h5:hover {
 
 /*Efeito Nav*/
 nav #cor1 {
-    color: var(--texto);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 nav #cor2:hover {
     color: var(--ciano);
-    font-weight: 500;
     border-bottom: 2px dashed var(--ciano);
 }
 
 nav #cor3:hover {
     color: rgba(255, 0, 0);
-    font-weight: 500;
     border-bottom: 2px dashed rgba(255, 0, 0);
 }
 
 nav #cor4:hover {
     color: purple;
-    font-weight: 500;
     border-bottom: 2px dashed purple;
 }
 
@@ -179,14 +174,13 @@ div#juncao-cartao {
     width: 280px;
     margin-top: 105px;
     margin-left: -110px;
-    scale: 1.2;
 }
 
 section#cartao {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 335px;
+    height: 345px;
     background-color: #fff000;
 }
 
@@ -208,10 +202,6 @@ section#cartao {
     background-image: url("../images/pc-version.jpg");
 }
 
-#cartao #area-img:hover {
-    scale: 1.05;
-}
-
 #cartao h3 {
     font-family: "montserrat", sans-serif;
     font-size: 30px;
@@ -229,8 +219,9 @@ section#cartao {
 
 #cartao p {
     font-family: "montserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 500;
 }
 
 section#rodape-cartao {
@@ -259,7 +250,6 @@ section#rodape-cartao {
     body {
         display: flex;
         flex-direction: column;
-        max-width: 100vw;
         overflow-x: visible;
     }
 
@@ -271,46 +261,36 @@ section#rodape-cartao {
         color: #ffffff;
         font-weight: 700;
         background-color: var(--texto);
-        font-size: 12px;
+        font-size: 13px;
+    }
+
+    nav #cor2,
+    #cor3,
+    #cor4 {
+        color: #ffffff;
+        font-size: 11px;
+        opacity: 60%;
+        transition: 1s;
     }
 
     nav #cor2 {
-        color: #ffffff;
-        opacity: 60%;
-        transition: .5s;
         background-color: var(--ciano);
     }
 
     nav #cor3 {
-        color: #ffffff;
-        opacity: 60%;
-        transition: .5s;
         background-color: rgba(255, 0, 0);
     }
 
     nav #cor4 {
-        color: #ffffff;
-        opacity: 60%;
-        transition: .5s;
         background-color: purple;
     }
 
-    header nav #cor2:hover {
+    nav #cor2:hover,
+    #cor3:hover,
+    #cor4:hover {
         color: #ffffff;
         opacity: 100%;
-        border-bottom: 0px;
-    }
-
-    header nav #cor3:hover {
-        color: #ffffff;
-        opacity: 100%;
-        border-bottom: 0px;
-    }
-
-    header nav #cor4:hover {
-        color: #ffffff;
-        opacity: 100%;
-        border-bottom: 0px;
+        border-bottom: none;
     }
 
     /*Conteudo Central*/
@@ -367,7 +347,7 @@ section#rodape-cartao {
     aside {
         display: flex;
         justify-content: center;
-        margin-top: 80px;
+        margin-top: 90px;
         width: 100vw;
         height: 211px;
         background-color: var(--amarelo);
@@ -414,7 +394,8 @@ section#rodape-cartao {
     }
 
     #cartao p {
-        font-size: 13px;
+        font-size: 14px;
+        margin-top: -4px;
     }
 
     section#rodape-cartao {

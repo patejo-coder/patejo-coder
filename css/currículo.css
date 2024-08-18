@@ -17,41 +17,37 @@ hgroup h5:hover {
 }
 
 nav #cor1:hover {
-    color: var(--texto);
-    font-weight: 500;
     border-bottom: 2px dashed var(--texto);
 }
 
 nav #cor2 {
-    color: var(--texto);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 nav #cor3:hover {
     color: rgba(255, 0, 0);
-    font-weight: 500;
     border-bottom: 2px dashed rgba(255, 0, 0);
 }
 
 nav #cor4:hover {
     color: purple;
-    font-weight: 500;
     border-bottom: 2px dashed purple;
 }
 
 /*Estilização Pagina*/
-body {
-    height: auto;
-    width: 100vw;
-    overflow-x: hidden;
-}
 
 aside {
     position: fixed;
     right: 0px;
     top: 210px;
     z-index: 0;
+    opacity: 30%;
+    transition: .5s;
+}
+
+aside:hover {
+    opacity: 100%;
 }
 
 aside nav {
@@ -102,12 +98,12 @@ div#b1:hover {
 }
 
 div#b2 {
-    border: 4px solid black;
-    color: black;
+    border: 4px solid rgb(244, 237, 35);
+    color: rgb(244, 237, 35);
 }
 
 div#b2:hover {
-    background-color: black;
+    background-color: rgb(244, 237, 35);
     color: white;
 }
 
@@ -135,11 +131,9 @@ div#b4:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: default;
     height: 230px;
     margin: 100px 0px 110px 0px;
     background-color: var(--ciano);
-    z-index: 2;
 }
 
 #titulo h1 {
@@ -173,7 +167,29 @@ main section {
 
 section#bloco-um {
     margin-bottom: 150px;
-    height: 220px;
+    height: auto;
+}
+
+summary {
+    cursor: pointer;
+    outline: none;
+    transition: 1s;
+}
+
+#summary-one:hover {
+    text-shadow: -5px 3px 3px rgba(128, 0, 128, .7);
+}
+
+#summary-two:hover {
+    text-shadow: -5px 3px 3px rgb(233, 226, 17);
+}
+
+#summary-three:hover {
+    text-shadow: -5px 3px 3px rgba(242, 15, 15, .7);
+}
+
+#summary-four:hover {
+    text-shadow: -5px 3px 3px rgba(0, 255, 255, .7);
 }
 
 #formacao-bg {
@@ -278,6 +294,11 @@ section#bloco-um {
     font-weight: 300;
 }
 
+.le p,
+.ld p {
+    text-align: justify;
+}
+
 .le p {
     margin-right: 330px;
 }
@@ -308,11 +329,11 @@ section#bloco-um {
 
 span.traco {
     display: block;
-    width: 670px;
-    height: 8px;
+    width: 300px;
+    height: 5px;
     border-radius: 50px;
     background-color: black;
-    margin: 70px 0px 70px 209px;
+    margin: 70px auto 70px auto;
 }
 
 section#botao-pdf {
@@ -344,7 +365,8 @@ section#botao-pdf {
 }
 
 @media screen and (max-width:376px) {
-/*Estilização CSS - Style*/
+
+    /*Estilização CSS - Style*/
     header hgroup {
         background-color: var(--ciano);
     }
@@ -353,59 +375,48 @@ section#botao-pdf {
         color: black;
     }
 
-    nav #cor1 {
-        color: #ffffff;
-        opacity: 60%;
-        background-color: var(--texto);
-    }
-
     nav #cor2 {
         color: #ffffff;
         font-weight: 700;
-        transition: .5s;
-        font-size: 12px;
+        transition: 1s;
+        font-size: 13px;
         background-color: var(--ciano);
     }
 
-    nav #cor3 {
+    nav #cor1,
+    #cor3,
+    #cor4 {
         color: #ffffff;
         opacity: 60%;
-        transition: .5s;
+        transition: 1s;
+        font-size: 11px;
+    }
+    
+    nav #cor1 {
+        background-color: var(--texto);
+    }
+
+    nav #cor3 {
         background-color: rgba(255, 0, 0);
     }
 
     nav #cor4 {
-        color: #ffffff;
-        opacity: 60%;
-        transition: .5s;
         background-color: purple;
     }
 
-    header nav #cor1:hover {
+    nav #cor1:hover, #cor3:hover,
+    #cor4:hover {
         color: #ffffff;
         opacity: 100%;
-        border-bottom: 0px;
-    }
-
-    header nav #cor3:hover {
-        color: #ffffff;
-        opacity: 100%;
-        border-bottom: 0px;
-    }
-
-    header nav #cor4:hover {
-        color: #ffffff;
-        opacity: 100%;
-        border-bottom: 0px;
+        border-bottom: none;
     }
 
     footer {
-        background-color: var(--ciano);
+        background-color: cyan;
     }
 
     /*Estilização Pagina Curriculo*/
     body {
-        height: auto;
         width: 100vw;
         overflow-x: scroll;
     }
@@ -418,17 +429,9 @@ section#botao-pdf {
     }
 
     aside nav {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
         width: 50px;
         height: 200px;
-        margin-right: -2px;
-        border-top: 2px solid black;
-        border-left: 2px solid black;
-        border-bottom: 2px solid black;
-        border-radius: 10px 0px 0px 10px;
+        margin-right: 0px;
     }
 
     div#b1,
@@ -447,19 +450,22 @@ section#botao-pdf {
     div#b2:hover,
     div#b3:hover,
     div#b4:hover {
-        scale: none;
+        scale: 1.2;
         font-size: 20px;
     }
 
     div#b1 {
         border: 3px solid purple;
     }
+
     div#b2 {
-        border: 3px solid black;
+        border: 3px solid rgb(244, 237, 35);
     }
+
     div#b3 {
         border: 3px solid red;
     }
+
     div#b4 {
         border: 3px solid cyan;
     }
@@ -486,36 +492,40 @@ section#botao-pdf {
         transition: 1s;
     }
 
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     /*Tamanho das sessões*/
     main section {
-        width: 330px;
+        width: 310px;
         border: 3px solid black;
     }
 
     section#bloco-um {
         margin-bottom: 130px;
-        height: 160px;
+    }
+
+    #summary-one:hover {
+        text-shadow: -2px 1px 1px rgba(128, 0, 128, .7);
+    }
+    
+    #summary-two:hover {
+        text-shadow: -2px 1px 1px rgb(233, 226, 17);
+    }
+    
+    #summary-three:hover {
+        text-shadow: -2px 1px 1px rgba(242, 15, 15, .7);
+    }
+    
+    #summary-four:hover {
+        text-shadow: -2px 1px 1px rgba(0, 255, 255, .7);
     }
 
     #formacao-bg {
-        display: flex;
-        align-items: center;
         justify-content: center;
-        height: 70px;
         width: 150px;
         margin: -70px auto 15px auto;
         background-color: white;
     }
 
     #cursos-bg {
-        display: flex;
-        align-items: center;
         justify-content: center;
         height: 50px;
         width: 275px;
@@ -524,8 +534,6 @@ section#botao-pdf {
     }
 
     #habilidades-bg {
-        display: flex;
-        align-items: center;
         justify-content: center;
         height: 50px;
         width: 170px;
@@ -536,13 +544,9 @@ section#botao-pdf {
     #especial-bg h1 {
         font-size: 20px;
         font-weight: 700;
-        font-family: "montserrat alternates", sans-serif;
     }
 
     #especial-bg {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         height: 55px;
         width: 285px;
         margin: -30px auto 0px auto;
@@ -571,39 +575,33 @@ section#botao-pdf {
 
     .le h2,
     .ld h2 {
-        font-family: "montserrat", sans-serif;
         font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 20px;
     }
 
     .le h3,
     .ld h3 {
-        font-family: "montserrat", sans-serif;
-        font-size: 15px;
-        font-weight: 500;
+        font-size: 14px;
         margin-bottom: 30px;
+    }
+
+    .ld .encurta {
+        font-size: 13px;
     }
 
     .le h4,
     .ld h4 {
-        font-family: "montserrat", sans-serif;
-        font-size: 10px;
-        font-weight: 400;
-        margin-bottom: 10px;
+        font-size: 13px;
     }
 
     .le p,
     .ld p,
     .le li,
     .ld li {
-        font-family: "montserrat", sans-serif;
-        font-size: 10px;
-        font-weight: 300;
+        font-size: 12px;
     }
 
-    .le p, .ld p {
-        text-align: justify;
+    .le p,
+    .ld p {
         margin-right: 0px;
         margin-left: 0px;
         margin-bottom: 5px;
@@ -629,17 +627,12 @@ section#botao-pdf {
     }
 
     span.traco {
-        display: block;
-        width: 150px;
-        height: 5px;
-        border-radius: 50px;
+        width: 100px;
+        height: 2px;
         margin: 10px auto 15px auto;
-        background-color: black;
     }
 
     section#botao-pdf {
-        display: flex;
-        justify-content: center;
         margin: -40px 0px -120px 0px;
     }
 
@@ -648,8 +641,6 @@ section#botao-pdf {
         height: 85px;
         border-radius: 40px;
         font-size: 22px;
-        font-weight: 700;
-        text-align: center;
     }
 }
 
@@ -763,12 +754,15 @@ section#botao-pdf {
     div#b1 {
         border: 3px solid purple;
     }
+
     div#b2 {
         border: 3px solid black;
     }
+
     div#b3 {
         border: 3px solid red;
     }
+
     div#b4 {
         border: 3px solid cyan;
     }
@@ -805,11 +799,6 @@ section#botao-pdf {
     main section {
         width: 330px;
         border: 3px solid black;
-    }
-
-    section#bloco-um {
-        margin-bottom: 130px;
-        height: 160px;
     }
 
     #formacao-bg {
@@ -911,7 +900,8 @@ section#botao-pdf {
         font-weight: 300;
     }
 
-    .le p, .ld p {
+    .le p,
+    .ld p {
         text-align: justify;
         margin-right: 0px;
         margin-left: 0px;

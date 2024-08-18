@@ -1,0 +1,428 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Montserrat+Alternates:wght@300;400;500;700&family=Montserrat:wght@300;400;500;700&display=swap');
+
+:root {
+    --amarelo: #F3F80C;
+    --ciano: rgba(0, 255, 255);
+    --texto: #000000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+}
+
+/*Estilização Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    z-index: 2;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .5);
+}
+
+hgroup {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+hgroup #caixinha {
+    width: 23px;
+    height: 23px;
+    margin-right: 20px;
+}
+
+hgroup h5 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 15px;
+    transition: 1s;
+}
+
+hgroup h6 {
+    font-family: "Monteserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+hgroup h6:before {
+    content: "/";
+    padding-right: 10px;
+}
+
+nav {
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 5px;
+    margin-right: 40px;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    font-size: 17px;
+    padding-bottom: 2px;
+    border: 2px dashed white;
+}
+
+/*Estilização Footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 87px;
+    position: sticky;
+    bottom: -100px;
+}
+
+footer section#esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 200px;
+    gap: 5px;
+    margin-left: 32px;
+}
+
+#esp::after {
+    content: "2024 por Matheus Oliveira";
+}
+
+#esquerda p {
+    font-family: "monteserrat", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+footer section#direita {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 40px;
+}
+
+#email,
+#telefone,
+#redes-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#direita h7 {
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-family: 15px;
+    margin-bottom: 10px;
+}
+
+#direita p {
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 1s;
+}
+
+#telefone p:hover {
+    color: rgb(40, 225, 230);
+}
+
+#email p:hover {
+    color: rgba(245, 42, 245);
+}
+
+#redes-sociais img {
+    width: 23px;
+    height: 23px;
+    opacity: 60%;
+    transition: 1s;
+}
+
+#redes-sociais img:hover {
+    opacity: 100%;
+    scale: 1.1;
+}
+
+@media screen and (max-width:376px) {
+
+    /*Formatação do Cabeçalho*/
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 170px;
+        box-shadow: hidden;
+    }
+
+    header hgroup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 20px 0px 30px 0px;
+    }
+
+    hgroup #caixinha {
+        display: none;
+    }
+
+    hgroup h5 {
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        margin: 5px 0px 0px 0px;
+    }
+
+    hgroup h6 {
+        font-family: "Monteserrat", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        margin-top: 5px;
+    }
+
+    .elemento-1 {
+        width: 150px;
+        height: 5px;
+        background-color: var(--texto);
+        margin-top: -2px;
+        border-radius: 5px;
+    }
+
+    .elemento-2 {
+        width: 150px;
+        height: 2px;
+        background-color: var(--texto);
+        margin-top: -2px;
+        border-radius: 5px;
+    }
+
+    header nav {
+        width: 100vw;
+        height: 80px;
+        position: sticky;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, .5);
+    }
+
+    header ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2px;
+        font-size: 12px;
+        margin: 25px 0px 0px 0px;
+    }
+
+    header li a {
+        padding: 7px;
+        border-radius: 5px;
+        border: 0px;
+    }
+
+    hgroup h6:before {
+        content: "";
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        margin-top: 180px;
+    }
+
+    footer section#esquerda {
+        gap: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    #esquerda p {
+        font-size: 12px;
+    }
+
+    footer section#direita {
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+
+    #email,
+    #telefone {
+        display: none;
+    }
+
+    #direita h7 {
+        font-family: "montserrat", sans-serif;
+        font-weight: 800;
+        font-family: 12px;
+        margin-bottom: 10px;
+    }
+
+    #redes-sociais img {
+        width: 21px;
+        height: 21px;
+        opacity: 60%;
+        transition: 1s;
+    }
+
+    #redes-sociais img:hover {
+        opacity: 100%;
+        scale: 1.1;
+    }
+}
+
+@media screen and (min-width:377px) and (max-width:415px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        height: 170px;
+        box-shadow: hidden;
+    }
+
+    header hgroup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 20px 0px 30px 0px;
+    }
+
+    hgroup #caixinha {
+        display: none;
+    }
+
+    hgroup h5 {
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        margin: 5px 0px 0px 0px;
+    }
+
+    hgroup h6 {
+        font-family: "Monteserrat", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        margin-top: 5px;
+    }
+
+    .elemento-1 {
+        width: 150px;
+        height: 5px;
+        background-color: var(--texto);
+        margin-top: -2px;
+        border-radius: 5px;
+    }
+
+    .elemento-2 {
+        width: 150px;
+        height: 2px;
+        background-color: var(--texto);
+        margin-top: -2px;
+        border-radius: 5px;
+    }
+
+    nav {
+        width: 100vw;
+        height: 80px;
+        position: sticky;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, .5);
+    }
+
+    header ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2px;
+        font-size: 12px;
+        margin: 25px 0px 0px 0px;
+    }
+
+    header li a {
+        padding: 7px;
+        border-radius: 5px;
+        border: 0px;
+    }
+
+    hgroup h6:before {
+        content: "";
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        width: 100vw;
+        margin-top: 200px;
+    }
+
+    footer section#esquerda {
+        gap: 10px;
+        margin-left: 11px;
+        margin-top: 10px;
+    }
+
+    #esquerda p {
+        font-size: 10px;
+    }
+
+    footer section#direita {
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+
+    #email,
+    #telefone {
+        display: none;
+    }
+
+    #direita h7 {
+        font-family: "montserrat", sans-serif;
+        font-weight: 800;
+        font-family: 12px;
+        margin-bottom: 10px;
+    }
+
+    #redes-sociais img {
+        width: 21px;
+        height: 21px;
+        opacity: 60%;
+        transition: 1s;
+    }
+
+    #redes-sociais img:hover {
+        opacity: 100%;
+        scale: 1.1;
+    }
+}

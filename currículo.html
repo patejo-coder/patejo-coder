@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" type="text/css" href="./css/default.css">
     <link rel="stylesheet" type="text/css" href="./css/currículo.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
 
     <title>Currículo</title>
 </head>
@@ -18,7 +18,7 @@
             <h5>Matheus Oliveira</h5>
             <h6>Currículo</h6>
         </hgroup>
-        <span id="elemento-1"></span>
+        <span class="elemento-1"></span>
         <nav>
             <ul>
                 <li><a href="./index.html" target="_self" id="cor1">sobre mim</a></li>
@@ -34,7 +34,7 @@
             <a href="#formacao">
                 <div id="b1">F</div>
             </a>
-            <a href="#cursos-complementares">
+            <a href="#curso">
                 <div id="b2">C</div>
             </a>
             <a href="#habilidades">
@@ -47,74 +47,94 @@
     </aside>
 
     <div id="titulo">
-        <h1>Currículo<a name="formacao"></a></h1>
+        <a name="formacao"></a>
+        <h1>Currículo</h1>
     </div>
     <main>
         <section id="bloco-um">
-            <div class="le">               
+            <div class="le">
                 <div id="formacao-bg">
-                    <h1></a>Formação</h1>
+                    <h1>Formação</h1>
                 </div>
-                <h2>E.E. Professor Simão Mathias</h2>
-                <h3>Ensino Médio - Conclusão I 2019<a name="cursos-complementares"></a></h3>
+                <details>
+                    <summary id="summary-one">
+                        <h2>E.E. PROFESSOR SIMÃO MATHIAS</h2>
+                    </summary>
+                    <h3>Ensino Médio - Conclusão | 2019</h3>
+                </details>
+                <a name="curso"></a>
             </div>
         </section>
+
 
         <section class="areas">
             <div class="ld">
                 <div id="cursos-bg">
-                    <h1>Cursos Complemetares</a></h1>
+                    <h1>Cursos Complemetares</h1>
                 </div>
-                <h2>FUTURO INFORMÁTICA</h2>
-                <h3>Curso Técnico I 2016</h3>
-                <h4>Web Designer</h4>
-                <ul>
-                    <li>HTML & CSS</li>
-                    <li>Photoshop</li>
-                    <li>Dreamweaver</li>
-                </ul>
-                <h4>Pacote Office</h4>
-                <ul>
-                    <li>Word</li>
-                    <li>Excel</li>
-                    <li>PowerPoint</li>
-                    <li>Outlook</li>
-                </ul>
-                <h4>Inglês Intermédiario</h4>
+                <details>
+                    <summary id="summary-two">
+                        <h2>FUTURO INFORMÁTICA</h2>
+                    </summary>
+                    <h3>Curso Técnico | 2016</h3>
+                    <h4>Web Designer</h4>
+                    <ul>
+                        <li>HTML & CSS</li>
+                        <li>Photoshop</li>
+                        <li>Dreamweaver</li>
+                    </ul>
+                    <h4>Pacote Office</h4>
+                    <ul>
+                        <li>Word</li>
+                        <li>Excel</li>
+                        <li>PowerPoint</li>
+                        <li>Outlook</li>
+                    </ul>
+                    <h4>Inglês Intermédiario</h4>
+                </details>
             </div>
             <span class="traco"></span>
             <div class="le">
-                <h2>MEGATOC CURSOS</h2>
-                <h3>Curso Técnico I 2019 - 2020</h3>
-                <h4>Hardware & Software</h4>
-                <ul>
-                    <li>Montagem e Manutenção</li>
-                    <li>Analise de Problemas</li>
-                </ul>
-                <h4>Redes de Computadores</h4>
-                <ul>
-                    <li>Gestão de Redes</li>
-                    <li>Arquiteturas de Rede</li>
-                    <li>Cabeamento Estrutural</li>
-                </ul>
-                <h4>Informática</h4>
-                <ul>
-                    <li>Digitação</li>
-                    <li>SO: Windows</li>
-                </ul>
+                <details>
+                    <summary id="summary-two">
+                        <h2>MEGATOC CURSOS</h2>
+                    </summary>
+                    <h3>Curso Técnico | 2019 - 2020</h3>
+                    <h4>Hardware & Software</h4>
+                    <ul>
+                        <li>Montagem e Manutenção</li>
+                        <li>Analise de Problemas</li>
+                    </ul>
+                    <h4>Redes de Computadores</h4>
+                    <ul>
+                        <li>Gestão de Redes</li>
+                        <li>Arquiteturas de Rede</li>
+                        <li>Cabeamento Estrutural</li>
+                    </ul>
+                    <h4>Informática</h4>
+                    <ul>
+                        <li>Digitação</li>
+                        <li>SO: Windows</li>
+                    </ul>
+                </details>
             </div>
             <span class="traco"></span>
             <div class="ld">
-                <h2>SENAI</h2>
-                <h3>Curso Livre I 2022</h3>
-                <h4>Produção e Edição de Vídeos</h4>
-                <ul>
-                    <li>Técnicas de Fotografia</li>
-                    <li>Técnicas de Edição</li>
-                    <li>Técnicas de Gravação</li>
-                    <li>Adobe Premiere</li>
-                    <li>DaVinci Resolve<a name="habilidades"></a></li>
-                </ul>
+                <details>
+                    <summary id="summary-two">
+                        <h2>SENAI</h2>
+                    </summary>
+                    <h3>Curso Livre | 2022</h3>
+                    <h4>Produção e Edição de Vídeos</h4>
+                    <ul>
+                        <li>Técnicas de Fotografia</li>
+                        <li>Técnicas de Edição</li>
+                        <li>Técnicas de Gravação</li>
+                        <li>Adobe Premiere</li>
+                        <li>DaVinci Resolve</li>
+                    </ul>
+                </details>
+                <a name="habilidades"></a>
             </div>
         </section>
 
@@ -127,8 +147,9 @@
                 <h3>Pensamento Criativo</h3>
                 <h3>Trabalho em Equipe</h3>
                 <h3>Aprendizado Continuo</h3>
-                <h3>Adaptabilidade<a name="experiencia"></a></h3>
+                <h3>Adaptabilidade</h3>
             </div>
+            <a name="experiencia"></a>
         </section>
 
         <section class="areas">
@@ -136,27 +157,51 @@
                 <h1>Experiência Profissional</h1>
             </div>
             <div class="le">
-                <h2>LORENZETTI</h2>
-                <h3>JOVEM APRENDIZ I 2021 - 2023</h3>
-                <p>Experiência com rotinas administrativas tento como tarefas, gestão de almoxarifado, conferencia de
-                    mercadoria e planilhas, além do reabastecimento das máquinas de EPI's.</p>
+                <details>
+                    <summary id="summary-four">
+                        <h2>LORENZETTI</h2>
+                    </summary>
+                    <h3>JOVEM APRENDIZ | 2021 - 2023</h3>
+                    <p>Em meu período como Aprendiz na Lorenzetti recebi treinamento a respeito dos processos administrativos,
+                        tendo como uma das responsabilidades o auxilio na gestão e atendimento dos
+                        almoxarifados.
+                        <br>
+                        <br>
+                        Auxiliava com o reabastecimento das máquinas de EPI´s, e a conferência e
+                        armazenamento dos materiais que chegavam por meio dos fornecedores.
+                        <br>
+                        <br>
+                        Também tinha como responsabilidades cuidar
+                        da triagem dos materiais que eram reprovados pelo setor de qualidade.
+                    </p>
+                </details>
             </div>
             <span class="traco"></span>
             <div class="ld">
-                <h2>Supermercado Sonda</h2>
-                <h3>Balconista de Frios I Atualmente</h3>
-                <p>Responsável pelo reabastecimento do balcão de frios, preparação e produção dos produtos ofertados
-                    pelo setor e pelo atendimento ao cliente, também tenho como tarefas a organização e estocagem dos
-                    produtos de laticínios.</p>
+                <details>
+                    <summary id="summary-four">
+                        <h2>SECONCI | HESAP</h2>
+                    </summary>
+                    <h3 class="encurta">Aux. de Almoxarifado | (Atualmente)</h3>
+                    <p>Auxiliar de almoxarifado no setor da Farmácia, tendo como responsabilidades a geração, separação
+                        e distribuição dos insumos para as farmácias internas e externa pertencentes ao hospital.
+                        <br>
+                        <br>
+                        Também atuando no recebimento e conferencia dos medicamentos, armazenamento e controle de estoque e validade com
+                        foco no uso do sistema Tacy.
+                        
+                    </p>
+                </details>
             </div>
         </section>
     </main>
     <section id="botao-pdf">
-        <a href="https://drive.google.com/file/d/1I7QgYDnuGvJdZG-kLPn9bSZhceV4qzsz/view?usp=sharing" target="_blank"><button>Currículo<br>PDF</button></a>
+        <a href="https://drive.google.com/file/d/1I7QgYDnuGvJdZG-kLPn9bSZhceV4qzsz/view?usp=sharing"
+            target="_blank"><button>Currículo<br>PDF</button></a>
     </section>
     <footer>
         <section id="esquerda">
-            <p>&copy 2023 por Matheus Oliveira</p>
+            <p id="esp">&copy</p>
             <p>Todos os direitos reservados</p>
         </section>
         <section id="direita">
