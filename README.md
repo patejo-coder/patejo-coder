@@ -1,4 +1,5 @@
-# Olá, eu sou o Matheus
+# Olá, eu sou o Matheus										
+![Vizualizações do perfil](https://komarev.com/ghpvc/?username=patejo-coder&style=for-the-badge&color=blue) 	
 
 ### ✏️ *Um pouco sobre mim*
 
