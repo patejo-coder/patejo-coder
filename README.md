@@ -4,7 +4,7 @@
 
 Atualmente eu estou estudando sobre *Web Designer*, **sou fascinado por tecnologia 👨‍💻** e espero um dia poder trabalhar nesse meio.
 
-Estou iniciando no mundo da progamação, e me divirto com o fato de que *há sempre algo novo a ser aprendido 📚*, meu foco no momento é o *Front-end:* **(HTML / CSS / JS)**, mas no futuro desejo alcançar a marca de um ***Desenvolvedor Full-Stack.***
+Estou iniciando no mundo da progamação, e me divirto com o fato de que *há sempre algo novo a ser aprendido 📚*, meu foco no momento é o *Front-end:* **(HTML 5 / CSS 3 / JS)**, mas no futuro desejo alcançar a marca de um ***Desenvolvedor Full-Stack.***
 
 <br>
 
@@ -17,12 +17,20 @@ Estou iniciando no mundo da progamação, e me divirto com o fato de que *há se
 
 <br>
 
+---
+
+<br>
+
 ### 🖥️ *Projetos*
 
 <br>
 
 **[Portfolio Matheus](https://patejo-coder.github.io/patejo-coder/)**
 
+<br>
+
+ ---
+ 
 <br>
 
 ### 📊 *Status no Github*
