@@ -1,11 +1,11 @@
-# Olá, eu sou o Matheus										
+# Olá, eu me chamo Matheus										
 ![Vizualizações do perfil](https://komarev.com/ghpvc/?username=patejo-coder&style=for-the-badge&color=blue) 	
 
 ### ✏️ *Um pouco sobre mim*
 
-Atualmente eu estou estudando sobre *Web Designer*, **sou fascinado por tecnologia 👨‍💻** e espero um dia poder trabalhar nesse meio.
+**Sou fascinado por tecnologia 👨‍💻** e por tudo que ela é capaz de nos proporcionar, no momento estou cursando "Ciências da Computação". 
 
-Estou iniciando no mundo da progamação, e me divirto com o fato de que *há sempre algo novo a ser aprendido 📚*, meu foco no momento é o *Front-end:* **(HTML 5 / CSS 3 / JS)**, mas no futuro desejo alcançar a marca de um ***Desenvolvedor Full-Stack.***
+Estou iniciando no mundo da progamação, e me divirto com o fato de que *há sempre algo novo a ser aprendido 📚*, tenho alguns conhecimnetos no *Front-end:* **(HTML 5 / CSS 3 / JS)**, e tambem já conheço um pouco de Java e SQL.
 
 <br>
 
