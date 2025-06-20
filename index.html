@@ -3,6 +3,11 @@
 
 <head>
     <meta chardet="utf-8">
+
+    <link rel="icon" type="image/x-icon" href="/_ProjetosEspeciais/_patejo-coder/images/favicons/foxy.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" type="image/x-icon" href="">
@@ -15,7 +20,7 @@
 <body>
     <header>
         <hgroup>
-            <span id="caixinha"></span>
+            <div class="" id="caixinha" onclick="animation()"></div>
             <h5>Matheus Oliveira</h5>
             <h6>Sobre Mim</h6>
         </hgroup>
@@ -34,18 +39,16 @@
             <h1>Bem-Vindo</h1>
             <h3>Você chegou ao meu site, de uma olhada em meus projetos e currículo.</h3>
             <section id="botoes">
-                <a href="https://drive.google.com/file/d/1I7QgYDnuGvJdZG-kLPn9bSZhceV4qzsz/view?usp=sharing" target="_self"> 
+                <a href="" target="_self"> <!-- Arruma esse link aqui seu vacilão-->
                     <button id="b1"></button>
                 </a>
                 <a href="./projetos.html">
                     <button id="b2"></button>
                 </a>
             </section>
-            <p id="texto">Olá me chamo Matheus, e no momento sou um estudante de progamação. Este site em que você
-                está
-                navegando
-                foi criando inteiramente por mim, através de <i id="s1">HTML 5</i> e <i id="s2">CSS 3</i> desenvolvido
-                do zero desde o designer até o código fonte da página.</p>
+            <p id="texto">
+                Olá, me chamo Matheus Cardoso e sou apaixonado pela tecnologia!<br><br>Pensar que em tudo que fazemos existe uma lógica por trás me motiva a aprender cada vez mais! Este site em que você está navegando nesse exato momento foi criado por mim através do <i class="mark" id="s1" onmousemove="inverteS1()" onmouseout="resetInverte()">HTML 5</i>, <i class="mark" id="s2" onmousemove="inverteS2()" onmouseout="resetInverte()">CSS 3</i> e <i class="mark" id="s3" onmousemove="inverteS3()" onmouseout="resetInverte()">JavaScript</i>. Ele foi pensando do zero desde o designer da página até o código-fonte da página.<br><br>
+                Convido você a conhecer um pouco mais sobre meus projetos e conhecimentos!</p>
             <span class="elemento-2"></span>
         </section>
         <aside>
@@ -56,13 +59,13 @@
                     </div>
                     <h3>Matheus Oliveira</h3>
                     <div id="traco"></div>
-                    <p>"Estudante de T.I"</p>
+                    <p>"Ciências da Computação"</p>
                 </section>
                 <section id="rodape-cartao">
                     <a href="https://github.com/patejo-coder" target="_blank"><img src="./svgs/github.svg"
                             alt="Icone Github" /></a>
-                    <a href="https://www.facebook.com/Matheus.Oliveira.2002/" target="_blank"><img
-                            src="./svgs/facebook.svg" alt="Icone Facebook" /></a>
+                    <!-- <a href="" target="_blank"><img
+                            src="" alt="" /></a> -->
                     <a href="https://www.linkedin.com/in/matheus-oliveira501/" target="_blank"><img
                             src="./svgs/linkedin.svg" alt="Icone Linkedin" /></a>
                     <a href="https://www.instagram.com/patejo_dono/" target="_blank"><img src="./svgs/instagram.svg"
@@ -77,10 +80,6 @@
             <p>Todos os direitos reservados</p>
         </section>
         <section id="direita">
-            <div id="telefone">
-                <h7>Telefone</h7>
-                <p>(11) 99837-3773</p>
-            </div>
             <div id="email">
                 <h7>E-mail</h7>
                 <p>matheuscardoso501@gmail.com</p>
@@ -90,8 +89,8 @@
                 <section>
                     <a href="https://github.com/patejo-coder" target="_blank"><img src="./svgs/github.svg"
                             alt="Icone Github" /></a>
-                    <a href="https://www.facebook.com/Matheus.Oliveira.2002/" target="_blank"><img
-                            src="./svgs/facebook.svg" alt="Icone Facebook" /></a>
+                    <!-- <a href="" target="_blank"><img
+                            src="" /></a> -->
                     <a href="https://www.linkedin.com/in/matheus-oliveira501/" target="_blank"><img
                             src="./svgs/linkedin.svg" alt="Icone Linkedin" /></a>
                     <a href="https://www.instagram.com/patejo_dono/" target="_blank"><img src="./svgs/instagram.svg"
@@ -100,5 +99,6 @@
             </div>
         </section>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 <html>

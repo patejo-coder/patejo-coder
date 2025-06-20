@@ -3,6 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <link rel="icon" type="image/x-icon" href="/_ProjetosEspeciais/_patejo-coder/images/favicons/foxy.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="./css/default.css">
@@ -34,60 +39,30 @@
             <h1 class="titulo">Desafios - Frontend Mentor</h1>
         </div>
         <section id="frontend">
-            <a href="https://patejo-coder.github.io/3-column-preview-card-component-main/" target="_blank">
-                <figure class="foto-legenda">
-                    <img src="./images/section-frontend/desafio-1.png" alt="imagem do desafio #01">
-                    <figcaption>
-                        <h1>Desafio #01</h1>
-                        <p>3 Column Preview Card</p>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="https://patejo-coder.github.io/nft-preview-card-component-main/" target="_blank">
-                <figure class="foto-legenda">
-                    <img src="./images/section-frontend/desafio-2.png" alt="imagem do desafio #02">
-                    <figcaption>
-                        <h1>Desafio #02</h1>
-                        <p>NFT Preview Card</p>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="https://patejo-coder.github.io/results-summary-component-main/" target="_blank">
-                <figure class="foto-legenda">
-                    <img src="./images/section-frontend/desafio-3.png" alt="imagem do desafio #03">
-                    <figcaption>
-                        <h1>Desafio #03</h1>
-                        <p>Results Summary Component </p>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="">
-                <figure class="foto-legenda">
-                    <img src="./images/section-frontend/desafio-4.png" alt="imagem do desafio #04" target="_blank">
-                    <figcaption>
-                        <h1>Desafio #04</h1>
-                        <p>Stats Preview Card</p>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="https://patejo-coder.github.io/social-proof-section-master/" target="_blank">
-                <figure class="foto-legenda">
-                    <img src="./images/section-frontend/desafio-5.png" alt="imagem do desafio #05">
-                    <figcaption>
-                        <h1>Desafio #05</h1>
-                        <p>Social Proof Section </p>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="https://patejo-coder.github.io/order-summary-component-main/" target="_blank">
-                <figure class="foto-legenda">
-                    <img src="./images/section-frontend/desafio-6.png" alt="imagem do desafio #06">
-                    <figcaption>
-                        <h1>Desafio #06</h1>
-                        <p>Order Summary</p>
-                    </figcaption>
-                </figure>
-            </a>
+            <section id="ld-esquerdo">
+                <ul>
+                    <li class="seletor" onclick="selectMenu0()">1# Desafio</li>
+                    <li class="seletor" onclick="selectMenu1()">2# Desafio</li>
+                    <li class="seletor" onclick="selectMenu2()">3# Desafio</li>
+                    <li class="seletor" onclick="selectMenu3()">4# Desafio</li>
+                    <li class="seletor" onclick="selectMenu4()">5# Desafio</li>
+                    <li class="seletor" onclick="selectMenu5()">6# Desafio</li>
+                    <li class="seletor" onclick="selectMenu6()">7# Desafio</li>
+                    <li class="seletor" onclick="selectMenu7()">8# Desafio</li>
+                    <li class="seletor" onclick="selectMenu8()">9# Desafio</li>
+                    <li class="seletor" onclick="selectMenu9()">10# Desafio</li>
+                    <li class="seletor" onclick="selectMenu10()">11# Desafio</li>
+                </ul>
+            </section>
+            <section id="ld-direito">
+                <div id="logo"></div>
+                <img src="" id="img-desafio"></img>
+                <section class="info">
+                    <a id="linkFrontend" target="_blank" href="">
+                        <h1 id="numero-desafio"></h1>
+                    </a>
+                </section>
+            </section>
         </section>
 
         <div class="traco"></div>
@@ -97,13 +72,7 @@
             <h1 class="titulo">Projetos Pessoais</h1>
         </div>
         <section id="pessoais">
-            <figure>
-                <img src="./images/section-pessoais/meu-site.png" alt="/">
-                <figcaption>
-                    <h1>Site Portfólio</h1>
-                    <p>Linguagens Usadas: HTML & CSS</p>
-                </figcaption>
-            </figure>
+            
         </section>
 
         <div class="traco"></div>
@@ -113,11 +82,7 @@
             <h1 class="titulo">Projetos Especiais</h1>
         </div>
         <section id="especiais">
-            <figure>
-                <figcaption>
-                    <h1>Em Breve</h1>
-                </figcaption>
-            </figure>
+            
         </section>
     </main>
     <footer>
@@ -126,10 +91,6 @@
             <p>Todos os direitos reservados</p>
         </section>
         <section id="direita">
-            <div id="telefone">
-                <h7>Telefone</h7>
-                <p>(11) 99837-3773</p>
-            </div>
             <div id="email">
                 <h7>E-mail</h7>
                 <p>matheuscardoso501@gmail.com</p>
@@ -139,8 +100,8 @@
                 <section>
                     <a href="https://github.com/patejo-coder" target="_blank"><img src="./svgs/github.svg"
                             alt="Icone Github" /></a>
-                    <a href="https://www.facebook.com/Matheus.Oliveira.2002/" target="_blank"><img
-                            src="./svgs/facebook.svg" alt="Icone Facebook" /></a>
+                    <!-- <a href="" target="_blank"><img
+                            src="" alt="" /></a> -->
                     <a href="https://www.linkedin.com/in/matheus-oliveira501/" target="_blank"><img
                             src="./svgs/linkedin.svg" alt="Icone Linkedin" /></a>
                     <a href="https://www.instagram.com/patejo_dono/" target="_blank"><img src="./svgs/instagram.svg"
@@ -149,6 +110,7 @@
             </div>
         </section>
     </footer>
+    <script src="./js/projetos.js"></script>
 </body>
 
 </html>

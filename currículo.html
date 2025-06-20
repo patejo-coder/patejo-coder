@@ -3,12 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <link rel="icon" type="image/x-icon" href="/_ProjetosEspeciais/_patejo-coder/images/favicons/foxy.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="./css/default.css">
     <link rel="stylesheet" type="text/css" href="./css/currículo.css">
 
     <title>Currículo</title>
+
 </head>
 
 <body>
@@ -30,7 +36,10 @@
     </header>
 
     <aside>
-        <nav id="menu-lateral">
+        <button class="btn" onclick="ligaBtn()">
+            <span></span>
+        </button>
+        <nav class="menu-lateral">
             <a href="#formacao">
                 <div id="b1">F</div>
             </a>
@@ -47,8 +56,8 @@
     </aside>
 
     <div id="titulo">
-        <a name="formacao"></a>
         <h1>Currículo</h1>
+        <a name="formacao"></a>
     </div>
     <main>
         <section id="bloco-um">
@@ -57,7 +66,16 @@
                     <h1>Formação</h1>
                 </div>
                 <details>
-                    <summary id="summary-one">
+                    <summary class="summaryOne" onclick="onSummaryOne0()">
+                        <h2>UNIP</h2>
+                    </summary>
+                    <h3>Ciência da Computação | (Cursando)</h3>
+                </details>
+                <span class="traco unc"></span>
+            </div>
+            <div class="ld">
+                <details>
+                    <summary class="summaryOne" onclick="onSummaryOne1()">
                         <h2>E.E. PROFESSOR SIMÃO MATHIAS</h2>
                     </summary>
                     <h3>Ensino Médio - Conclusão | 2019</h3>
@@ -72,70 +90,71 @@
                 <div id="cursos-bg">
                     <h1>Cursos Complemetares</h1>
                 </div>
-                <details>
-                    <summary id="summary-two">
-                        <h2>FUTURO INFORMÁTICA</h2>
-                    </summary>
-                    <h3>Curso Técnico | 2016</h3>
-                    <h4>Web Designer</h4>
-                    <ul>
-                        <li>HTML & CSS</li>
-                        <li>Photoshop</li>
-                        <li>Dreamweaver</li>
-                    </ul>
-                    <h4>Pacote Office</h4>
-                    <ul>
-                        <li>Word</li>
-                        <li>Excel</li>
-                        <li>PowerPoint</li>
-                        <li>Outlook</li>
-                    </ul>
-                    <h4>Inglês Intermédiario</h4>
-                </details>
-            </div>
-            <span class="traco"></span>
-            <div class="le">
-                <details>
-                    <summary id="summary-two">
-                        <h2>MEGATOC CURSOS</h2>
-                    </summary>
-                    <h3>Curso Técnico | 2019 - 2020</h3>
-                    <h4>Hardware & Software</h4>
-                    <ul>
-                        <li>Montagem e Manutenção</li>
-                        <li>Analise de Problemas</li>
-                    </ul>
-                    <h4>Redes de Computadores</h4>
-                    <ul>
-                        <li>Gestão de Redes</li>
-                        <li>Arquiteturas de Rede</li>
-                        <li>Cabeamento Estrutural</li>
-                    </ul>
-                    <h4>Informática</h4>
-                    <ul>
-                        <li>Digitação</li>
-                        <li>SO: Windows</li>
-                    </ul>
-                </details>
-            </div>
-            <span class="traco"></span>
-            <div class="ld">
-                <details>
-                    <summary id="summary-two">
-                        <h2>SENAI</h2>
-                    </summary>
-                    <h3>Curso Livre | 2022</h3>
-                    <h4>Produção e Edição de Vídeos</h4>
-                    <ul>
-                        <li>Técnicas de Fotografia</li>
-                        <li>Técnicas de Edição</li>
-                        <li>Técnicas de Gravação</li>
-                        <li>Adobe Premiere</li>
-                        <li>DaVinci Resolve</li>
-                    </ul>
-                </details>
+                <div class="le">
+                    <details>
+                        <summary class="summaryTwo" onclick="onSummaryTwo0()">
+                            <h2>SENAI</h2>
+                        </summary>
+                        <h3>Curso Livre | 2022</h3>
+                        <h4>Produção e Edição de Vídeos</h4>
+                        <ul>
+                            <li>Técnicas de Fotografia</li>
+                            <li>Técnicas de Edição</li>
+                            <li>Técnicas de Gravação</li>
+                            <li>Adobe Premiere</li>
+                            <li>DaVinci Resolve</li>
+                        </ul>
+                    </details>
+                </div>
+                <span class="traco"></span>
+                <div class="ld">
+                    <details>
+                        <summary class="summaryTwo" onclick="onSummaryTwo1()">
+                            <h2>MEGATOC CURSOS</h2>
+                        </summary>
+                        <h3>Curso Técnico | 2019 - 2020</h3>
+                        <h4>Hardware & Software</h4>
+                        <ul>
+                            <li>Montagem e Manutenção</li>
+                            <li>Analise de Problemas</li>
+                        </ul>
+                        <h4>Redes de Computadores</h4>
+                        <ul>
+                            <li>Gestão de Redes</li>
+                            <li>Arquiteturas de Rede</li>
+                            <li>Cabeamento Estrutural</li>
+                        </ul>
+                        <h4>Informática</h4>
+                        <ul>
+                            <li>Digitação</li>
+                            <li>SO: Windows</li>
+                        </ul>
+                    </details>
+                </div>
+                <span class="traco"></span>
+                <div class="le">
+                    <details>
+                        <summary class="summaryTwo" onclick="onSummaryTwo2()">
+                            <h2>FUTURO INFORMÁTICA</h2>
+                        </summary>
+                        <h3>Curso Técnico | 2016</h3>
+                        <h4>Web Designer</h4>
+                        <ul>
+                            <li>HTML & CSS</li>
+                            <li>Photoshop</li>
+                            <li>Dreamweaver</li>
+                        </ul>
+                        <h4>Pacote Office</h4>
+                        <ul>
+                            <li>Word</li>
+                            <li>Excel</li>
+                            <li>PowerPoint</li>
+                            <li>Outlook</li>
+                        </ul>
+                        <h4>Inglês Intermédiario</h4>
+                    </details>
+                </div>
                 <a name="habilidades"></a>
-            </div>
         </section>
 
         <section class="areas">
@@ -143,11 +162,11 @@
                 <div id="habilidades-bg">
                     <h1>Habilidades</h1>
                 </div>
-                <h3>Boa Comunicação</h3>
+                <h3>Aprendizado Continuo</h3>
                 <h3>Pensamento Criativo</h3>
                 <h3>Trabalho em Equipe</h3>
-                <h3>Aprendizado Continuo</h3>
                 <h3>Adaptabilidade</h3>
+                <h3>Resiliência</h3>
             </div>
             <a name="experiencia"></a>
         </section>
@@ -158,11 +177,41 @@
             </div>
             <div class="le">
                 <details>
-                    <summary id="summary-four">
+                    <summary class="summaryFour" onclick="onSummaryFour0()">
+                        <h2>SECONCI | HESAP</h2>
+                    </summary>
+                    <h3 class="encurta">Aux. Administrativo I - <span class="negrito">Finanças</span> | (Atualmente)</h3>
+                    <p>
+                    </p>
+                </details>
+            </div>
+            <span class="traco"></span>
+            <div class="ld">
+                <details>
+                    <summary class="summaryFour" onclick="onSummaryFour1()">
+                        <h2>SECONCI | HESAP</h2>
+                    </summary>
+                    <h3 class="encurta">Aux. de Almoxarifado - <span class="negrito">Fármacia</span> | 2024</h3>
+                    <p>Auxiliar de almoxarifado tendo como rotina geração, separação
+                        e distribuição dos insumos para as farmácias satelites e farmacia alocada na unidade local do
+                        hospital.
+                        <br>
+                        <br>
+                        Recebimento e conferencia de medicamentos, controle de
+                        estoque e temperatura, alem de monitoramento de validade com
+                        foco no uso do sistema Tasy.
+                    </p>
+                </details>
+            </div>
+            <span class="traco"></span>
+            <div class="le">
+                <details>
+                    <summary class="summaryFour" onclick="onSummaryFour2()">
                         <h2>LORENZETTI</h2>
                     </summary>
-                    <h3>JOVEM APRENDIZ | 2021 - 2023</h3>
-                    <p>Em meu período como Aprendiz na Lorenzetti recebi treinamento a respeito dos processos administrativos,
+                    <h3>JOVEM APRENDIZ - <span class="negrito">Suprimentos</span> | 2021 - 2023</h3>
+                    <p>Como Aprendiz na Lorenzetti recebi treinamento a respeito dos processos
+                        administrativos,
                         tendo como uma das responsabilidades o auxilio na gestão e atendimento dos
                         almoxarifados.
                         <br>
@@ -176,28 +225,10 @@
                     </p>
                 </details>
             </div>
-            <span class="traco"></span>
-            <div class="ld">
-                <details>
-                    <summary id="summary-four">
-                        <h2>SECONCI | HESAP</h2>
-                    </summary>
-                    <h3 class="encurta">Aux. de Almoxarifado | (Atualmente)</h3>
-                    <p>Auxiliar de almoxarifado no setor da Farmácia, tendo como responsabilidades a geração, separação
-                        e distribuição dos insumos para as farmácias internas e externa pertencentes ao hospital.
-                        <br>
-                        <br>
-                        Também atuando no recebimento e conferencia dos medicamentos, armazenamento e controle de estoque e validade com
-                        foco no uso do sistema Tacy.
-                        
-                    </p>
-                </details>
-            </div>
         </section>
     </main>
     <section id="botao-pdf">
-        <a href="https://drive.google.com/file/d/159KWvGdm98P1tbS1C1OjoSlETuI_cb9O/view?usp=sharing"
-            target="_blank"><button>Currículo<br>PDF</button></a>
+        <a href="" target="_blank"><button>Currículo<br>PDF</button></a>
     </section>
     <footer>
         <section id="esquerda">
@@ -205,10 +236,6 @@
             <p>Todos os direitos reservados</p>
         </section>
         <section id="direita">
-            <div id="telefone">
-                <h7>Telefone</h7>
-                <p>(11) 99837-3773</p>
-            </div>
             <div id="email">
                 <h7>E-mail</h7>
                 <p>matheuscardoso501@gmail.com</p>
@@ -218,8 +245,8 @@
                 <section>
                     <a href="https://github.com/patejo-coder" target="_blank"><img src="./svgs/github.svg"
                             alt="Icone Github" /></a>
-                    <a href="https://www.facebook.com/Matheus.Oliveira.2002/" target="_blank"><img
-                            src="./svgs/facebook.svg" alt="Icone Facebook" /></a>
+                    <!-- <a href="" target="_blank"><img
+                            src="" alt="" /></a> -->
                     <a href="https://www.linkedin.com/in/matheus-oliveira501/" target="_blank"><img
                             src="./svgs/linkedin.svg" alt="Icone Linkedin" /></a>
                     <a href="https://www.instagram.com/patejo_dono/" target="_blank"><img src="./svgs/instagram.svg"
@@ -228,6 +255,7 @@
             </div>
         </section>
     </footer>
+    <script src="./js/currículo.js"></script>
 </body>
 
 </html>

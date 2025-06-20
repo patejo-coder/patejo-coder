@@ -8,21 +8,22 @@ header #caixinha {
 
 hgroup h5:hover {
     color: purple;
+    text-shadow: -4px 3px 3px rgba(0, 0, 0, 0.8);
 }
 
 nav #cor1:hover {
     color: var(--texto);
-    border-bottom: 2px dashed var(--texto);
+    border-bottom: 2px solid var(--texto);
 }
 
 nav #cor2:hover {
     color: var(--ciano);
-    border-bottom: 2px dashed var(--ciano);
+    border-bottom: 2px solid var(--ciano);
 }
 
 nav #cor3:hover {
     color: red;
-    border-bottom: 2px dashed red;
+    border-bottom: 2px solid red;
 }
 
 nav #cor4 {
@@ -30,139 +31,122 @@ nav #cor4 {
     font-size: 18px;
 }
 
-section.container {
+main {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
 }
 
-.container a {
-    color: black;
-    text-decoration: none;
-    height: 271.5px;
-    width: 100vw;
+section#container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    transition: 1s ease-in;
 }
 
-section.container div {
+section#container #btn {
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transform: translate(-5px, 0px);
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+section#container #btn:hover {
+    scale: 1.8;
+}
+
+section#container #btn.ativo {
+    scale: 1.8;
+    background-color: #FFFFFF;   
+}
+
+.cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-    transition: 2s;
-    border: 1px solid black;
-}
-
-.container div:hover span {
-    opacity: 100%;
-}
-
-.container div:hover h2 {
-    opacity: 100%;
-}
-
-section.container span {
-    background-size: cover;
-    height: 100px;
-    width: 100px;
-    opacity: 40%;
-    transition: 1.5s;
-}
-
-section.container h2 {
-    font-family: "montserrat alternates", sans-serif;
-    font-size: 25px;
-    padding-top: 25px;
-    opacity: 40%;
-    transition: 1.5s;
-}
-
-#github {
-    background-color: #FFFFFF;
-    background-image: linear-gradient(180deg, #ffffff 70%, #999999 100%);
-}
-
-#github span {
-    background-image: url("../svgs/contatos/git-red.png");
-    scale: 1.4;
-}
-
-#instagram {
-    background-color: rgba(16, 245, 232, 96%);
-    background-image: linear-gradient(180deg, #10F5E8 70%, #0A8F87 100%);
-}
-
-#instagram span {
-    background-image: url("../svgs/contatos/insta.png");
-}
-
-#gmail {
-    background-color: rgba(255, 0, 0, 71%);
-    background-image: linear-gradient(180deg, #f13d3d 70%, #9f0707 100%);
-}
-
-#gmail span {
-    background-image: url("../svgs/contatos/gmail.png");
-}
-
-#linkedin {
-    background-color: rgb(66, 255, 19);
-    background-image: linear-gradient(180deg, #42FF13 70%, #28990B 100%);
-}
-
-#linkedin span {
-    background-image: url("../svgs/contatos/link.png");
-}
-
-#facebook {
-    background-color: rgba(15, 102, 232, 96%);
-    background-image: linear-gradient(180deg, #0F66E8 70%, #093982 100%);
-}
-
-#facebook span {
-    background-image: url("../svgs/contatos/face.png");
-}
-
-#tel {
-    background-color: rgba(250, 255, 0, 86%);
-    background-image: linear-gradient(180deg, rgba(250, 255, 0, 70%), rgba(150, 153, 0) 100%);
-}
-
-#tel span {
-    background-image: url("../svgs/contatos/tel.png");
-}
-
-#github:hover,
-#instagram:hover,
-#gmail:hover,
-#linkedin:hover,
-#facebook:hover,
-#tel:hover {
-    height: 72vh;
-}
-
-
-footer {
     position: absolute;
-    bottom: 0px;
-    width: 100vw;
+    width: 150px;
+    height: 150px;
+    top: 17px;
+    left: 17px;
+    opacity: 0%;
+    border-radius: 20%;
+    box-shadow: 0px 0px 0px white;
+    transition: transform 1s ease-out, opacity 1s ease-out, box-shadow .3s;
 }
 
-@media screen and (max-width: 376px) {
-    body {
-        display: flex;
-    flex-direction: column
+.icones {
+    width: 80px;
+    height: 80px;
 }
 
-hgroup {
-    background-color: purple;
+section#container p {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 17px;
 }
 
-nav #cor1
-nav #cor2
-nav #cor3
-nav #cor4
-
+section#container a:hover {
+    text-decoration: underline;
 }
-continuar daqui paizão.
+
+.v1 {
+    color: #000000;
+}
+
+.v2 {
+    color: #FFFFFF;
+}
+
+#card-git {
+    color: #000000;
+    border: 3px solid #000000;
+    background-color: #FFFFFF;
+}
+
+#card-email {
+    border: 2px solid #FFFFFF;
+    background-color: #dd4f43;
+}
+
+#card-front {
+    color: #000000;
+    border: 3px solid #000000;
+    background-color: #FFFFFF;
+}
+
+#card-link {
+    border: 2px solid #FFFFFF;
+    background-color: #0077b5;
+}
+
+#card-fcc {
+    color: black;
+    border: 3px solid #000000;
+    background-color: #FFFFFF;
+}
+
+#card-insta {
+    border: 2px solid #FFFFFF;
+    background-color: #d32789;
+}
+
+footer #email, #redes-sociais {
+    display: none;
+}
+
+#corpo, footer {
+    transition: background-color .9s ease-out, color .9s ease-out;
+}

@@ -14,10 +14,11 @@ span#caixinha {
 
 hgroup h5:hover {
     color: rgba(0, 255, 255);
+    text-shadow: -2px 1px 3px rgba(0, 0, 0, 1);
 }
 
 nav #cor1:hover {
-    border-bottom: 2px dashed var(--texto);
+    border-bottom: 2px solid var(--texto);
 }
 
 nav #cor2 {
@@ -27,41 +28,65 @@ nav #cor2 {
 
 nav #cor3:hover {
     color: rgba(255, 0, 0);
-    border-bottom: 2px dashed rgba(255, 0, 0);
+    border-bottom: 2px solid rgba(255, 0, 0);
 }
 
 nav #cor4:hover {
     color: purple;
-    border-bottom: 2px dashed purple;
+    border-bottom: 2px solid purple;
 }
 
 /*Estilização Pagina*/
-
 aside {
     position: fixed;
+    display: flex;
     right: 0px;
     top: 210px;
     z-index: 0;
-    opacity: 30%;
     transition: .5s;
 }
 
-aside:hover {
-    opacity: 100%;
+.btn {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    opacity: 30%;
+    transition: 1s;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border-radius: 5px 0px 0px 5px;
 }
 
-aside nav {
+.btn:hover {
+    opacity: 100%;
+    background-color: #FFFFFF;
+}
+
+.btn span::after {
+    content: ">";
+    font-size: 3em;
+}
+
+.onBtn span::after {
+    content: "<";
+}
+
+aside nav.menu-lateral {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     width: 80px;
     height: 300px;
-    margin-right: -2px;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    border-radius: 10px 0px 0px 10px;
+    margin-right: -80px;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 0px 10px;
+    transition: .8s;
+}
+
+aside nav.onMenu {
+    margin-right: 0px;
 }
 
 div#b1,
@@ -161,7 +186,7 @@ main {
 }
 
 main section {
-    width: 1075px;
+    width: 1080px;
     border: 5px solid black;
 }
 
@@ -173,22 +198,18 @@ section#bloco-um {
 summary {
     cursor: pointer;
     outline: none;
-    transition: 1s;
+    transition: 0.5s;
 }
 
-#summary-one:hover {
+.summaryOn1 {
     text-shadow: -5px 3px 3px rgba(128, 0, 128, .7);
 }
 
-#summary-two:hover {
+.summaryOn2 {
     text-shadow: -5px 3px 3px rgb(233, 226, 17);
 }
 
-#summary-three:hover {
-    text-shadow: -5px 3px 3px rgba(242, 15, 15, .7);
-}
-
-#summary-four:hover {
+.summaryOn4 {
     text-shadow: -5px 3px 3px rgba(0, 255, 255, .7);
 }
 
@@ -217,6 +238,8 @@ summary {
     height: 70px;
     width: 320px;
     margin: -75px 0px 45px -20px;
+    transform: translateX(350px);
+    transform: translateX(350px);
     background-color: white;
 }
 
@@ -232,7 +255,7 @@ summary {
     justify-content: center;
     height: 80px;
     width: 660px;
-    margin: -45px 0px 0px 230px;
+    transform: translate(220px, -45px);
     background-color: white;
 }
 
@@ -247,17 +270,18 @@ summary {
     text-align: right;
 }
 
-.le h1 {
-    font-family: "montserrat alternates", sans-serif;
-    font-size: 45px;
-    font-weight: 700;
-    margin-left: 17px;
-}
-
+.le h1,
 .ld h1 {
     font-family: "montserrat alternates", sans-serif;
     font-size: 45px;
     font-weight: 700;
+}
+
+.le h1 {
+    margin-left: 17px;
+}
+
+.ld h1 {
     margin-right: 18px;
 }
 
@@ -313,27 +337,31 @@ summary {
     margin-bottom: 4px;
 }
 
-.le ul {
+.le ul, .ld ul {
     margin-bottom: 41px;
     margin-left: 20px;
-}
-
-.ld ul {
-    margin-bottom: 41px;
-    margin-right: 20px;
 }
 
 .areas {
     margin-bottom: 110px;
 }
 
-span.traco {
+.negrito {
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.traco {
     display: block;
     width: 300px;
     height: 5px;
     border-radius: 50px;
     background-color: black;
-    margin: 70px auto 70px auto;
+    margin: 50px auto 50px auto;
+}
+
+span.unc {
+margin-bottom: 10px;
 }
 
 section#botao-pdf {
@@ -364,16 +392,11 @@ section#botao-pdf {
     background-color: rgba(0, 0, 0, .0);
 }
 
-@media screen and (max-width:376px) {
-
-    /*Estilização CSS - Style*/
+@media screen and (max-width: 376px) {
     header hgroup {
         background-color: var(--ciano);
     }
 
-    hgroup h5:hover {
-        color: black;
-    }
 
     nav #cor2 {
         color: #ffffff;
@@ -391,7 +414,7 @@ section#botao-pdf {
         transition: 1s;
         font-size: 11px;
     }
-    
+
     nav #cor1 {
         background-color: var(--texto);
     }
@@ -404,7 +427,8 @@ section#botao-pdf {
         background-color: purple;
     }
 
-    nav #cor1:hover, #cor3:hover,
+    nav #cor1:hover,
+    #cor3:hover,
     #cor4:hover {
         color: #ffffff;
         opacity: 100%;
@@ -415,7 +439,6 @@ section#botao-pdf {
         background-color: cyan;
     }
 
-    /*Estilização Pagina Curriculo*/
     body {
         width: 100vw;
         overflow-x: scroll;
@@ -424,13 +447,17 @@ section#botao-pdf {
     aside {
         position: fixed;
         right: 0px;
-        top: 210px;
+        top: 200px;
         z-index: 0;
     }
 
-    aside nav {
-        width: 50px;
-        height: 200px;
+    aside nav.menu-lateral {
+        width: 60px;
+        height: 225px;
+        margin-right: -65px;
+    }
+
+    aside nav.onMenu {
         margin-right: 0px;
     }
 
@@ -502,19 +529,15 @@ section#botao-pdf {
         margin-bottom: 130px;
     }
 
-    #summary-one:hover {
+    .summaryOn1 {
         text-shadow: -2px 1px 1px rgba(128, 0, 128, .7);
     }
-    
-    #summary-two:hover {
+
+    .summaryOn2 {
         text-shadow: -2px 1px 1px rgb(233, 226, 17);
     }
-    
-    #summary-three:hover {
-        text-shadow: -2px 1px 1px rgba(242, 15, 15, .7);
-    }
-    
-    #summary-four:hover {
+
+    .summaryOn4 {
         text-shadow: -2px 1px 1px rgba(0, 255, 255, .7);
     }
 
@@ -626,7 +649,7 @@ section#botao-pdf {
         margin-bottom: 100px;
     }
 
-    span.traco {
+    .traco {
         width: 100px;
         height: 2px;
         margin: 10px auto 15px auto;
@@ -644,7 +667,7 @@ section#botao-pdf {
     }
 }
 
-@media screen and (min-width:377px) and (max-width:415px) {
+@media screen and (min-width: 377px) and (max-width: 415px) {
     header hgroup {
         background-color: var(--ciano);
     }

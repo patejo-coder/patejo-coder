@@ -7,6 +7,27 @@
     --texto: #000000;
 }
 
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(245, 245, 245) black;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(75, 7, 75);
+    border-radius: 20px;
+    border: 3px solid rgb(245, 245, 245);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -15,12 +36,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-weight: 400;
     font-family: "Inter", sans-serif;
 }
 
-/*Estilização Header*/
 header {
     display: flex;
     justify-content: space-between;
@@ -45,16 +69,16 @@ hgroup #caixinha {
 
 hgroup h5 {
     font-family: "Montserrat Alternates", sans-serif;
-    font-size: 30px;
+    font-size: 2.2em;
     font-weight: 700;
-    margin-right: 15px;
+    margin-right: 10px;
     transition: 1s;
 }
 
 hgroup h6 {
     font-family: "Monteserrat", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.4em;
     margin-top: 6px;
 }
 
@@ -82,14 +106,13 @@ nav li a {
     transition: .5s;
     font-size: 17px;
     padding-bottom: 2px;
-    border: 2px dashed white;
+    border-bottom: 2px solid white;
 }
 
-/*Estilização Footer*/
 footer {
     display: flex;
     justify-content: space-between;
-    height: 87px;
+    height: 90px;
     position: sticky;
     bottom: -100px;
 }
@@ -105,7 +128,7 @@ footer section#esquerda {
 }
 
 #esp::after {
-    content: "2024 por Matheus Oliveira";
+    content: "2025 por Matheus Oliveira";
 }
 
 #esquerda p {
@@ -117,12 +140,11 @@ footer section#esquerda {
 footer section#direita {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     margin-right: 40px;
 }
 
 #email,
-#telefone,
 #redes-sociais {
     display: flex;
     flex-direction: column;
@@ -144,10 +166,6 @@ footer section#direita {
     transition: 1s;
 }
 
-#telefone p:hover {
-    color: rgb(40, 225, 230);
-}
-
 #email p:hover {
     color: rgba(245, 42, 245);
 }
@@ -155,24 +173,23 @@ footer section#direita {
 #redes-sociais img {
     width: 23px;
     height: 23px;
-    opacity: 60%;
+    opacity: 50%;
     transition: 1s;
+    margin: 0px 3px;
 }
 
 #redes-sociais img:hover {
     opacity: 100%;
-    scale: 1.1;
+    scale: 1.3;
 }
 
-@media screen and (max-width:376px) {
-
-    /*Formatação do Cabeçalho*/
+@media screen and (max-width: 376px) {
     header {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 170px;
+        height: 175px;
         box-shadow: hidden;
     }
 
@@ -249,17 +266,17 @@ footer section#direita {
         display: flex;
         justify-content: space-between;
         height: 80px;
-        margin-top: 180px;
+        margin-top: 200px;
     }
 
     footer section#esquerda {
-        gap: 10px;
+        gap: 5px;
         margin-left: 10px;
         margin-top: 10px;
     }
 
     #esquerda p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     footer section#direita {
@@ -267,25 +284,17 @@ footer section#direita {
         align-items: center;
         gap: 0px;
         margin-right: 15px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
-    #email,
-    #telefone {
+    #email {
         display: none;
-    }
-
-    #direita h7 {
-        font-family: "montserrat", sans-serif;
-        font-weight: 800;
-        font-family: 12px;
-        margin-bottom: 10px;
     }
 
     #redes-sociais img {
         width: 21px;
         height: 21px;
-        opacity: 60%;
+        opacity: 50%;
         transition: 1s;
     }
 
@@ -295,7 +304,7 @@ footer section#direita {
     }
 }
 
-@media screen and (min-width:377px) and (max-width:415px) {
+@media screen and (min-width: 377px) and (max-width: 415px) {
     header {
         display: flex;
         flex-direction: column;
@@ -402,8 +411,7 @@ footer section#direita {
         margin-top: 10px;
     }
 
-    #email,
-    #telefone {
+    #email {
         display: none;
     }
 
@@ -417,12 +425,57 @@ footer section#direita {
     #redes-sociais img {
         width: 21px;
         height: 21px;
-        opacity: 60%;
+        opacity: 50%;
         transition: 1s;
     }
 
     #redes-sociais img:hover {
         opacity: 100%;
         scale: 1.1;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    header {
+        height: 120px;
+    }
+
+    hgroup {
+        margin-left: 40px;
+    }
+
+    hgroup #caixinha {
+        width: 30px;
+        height: 28px;
+        margin-right: 20px;
+    }
+
+    nav ul {
+        gap: 70px;
+        margin-right: 60px;
+    }
+
+    nav li a {
+        font-size: 18px;
+    }
+
+    footer {
+        height: 110px;
+    }
+
+    footer section#esquerda {
+        width: 300px;
+        gap: 10px;
+        margin-left: 35px;
+    }
+
+    footer section#direita {
+        gap: 80px;
+        margin-right: 40px;
+    }
+
+    #redes-sociais img {
+        width: 28px;
+        height: 28px;
     }
 }
