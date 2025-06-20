@@ -3,9 +3,9 @@
 
 ### ✏️ *Um pouco sobre mim*
 
-**Sou fascinado por tecnologia 👨‍💻** e por tudo que ela é capaz de nos proporcionar, no momento estou cursando "Ciências da Computação". 
+**Sou fascinado por tecnologia 👨‍💻** e por tudo que ela é capaz de nos proporcionar, no momento estou cursando ***"Ciências da Computação".*** 
 
-Estou iniciando no mundo da progamação, e me divirto com o fato de que *há sempre algo novo a ser aprendido 📚*, tenho alguns conhecimnetos no *Front-end:* **(HTML 5 / CSS 3 / JS)**, e tambem já conheço um pouco de Java e SQL.
+Estou iniciando no mundo da progamação, e me divirto com o fato de que *há sempre algo novo a ser aprendido 📚*, tenho alguns conhecimnetos no *Front-end:* **(HTML 5 / CSS 3 / JS)**, e tambem já conheço um pouco de ***Java e SQL.***
 
 <br>
 
