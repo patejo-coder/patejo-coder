@@ -11,11 +11,15 @@ Te convido a observar meus repositórios e conferir como estou nessa jornada!
 <br>
 
 ### 💾 *Tecnologias*
-  ![Markdown](https://img.shields.io/badge/Markdown-000?style=for-the-badge&logo=markdown)
-  ![Adobe Photoshop](https://img.shields.io/badge/photoshop-%2309c2ff?style=for-the-badge&logo=adobephotoshop&color=%23001d25)
-  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+  ![Linux Fedora](https://img.shields.io/badge/fedora-black?style=for-the-badge&logo=linux&logoColor=white&logoSize=auto)
+  ![Markdown](https://img.shields.io/badge/Markdown-000?style=for-the-badge&logo=markdown&logoColor=cyan&logoSize=auto)
+  ![Adobe Photoshop](https://img.shields.io/badge/photoshop-%2309c2ff?style=for-the-badge&logo=polestar&color=%23001d25&logoSize=auto)
+  ![HTML5](https://img.shields.io/badge/html5-orange?style=for-the-badge&logo=html5&logoColor=white&logoSize=auto)
+  ![CSS3](https://img.shields.io/badge/CSS3-royalblue?style=for-the-badge&logo=css&logoColor=white&logoSize=auto)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&logoSize=auto)
+  ![Java](https://img.shields.io/badge/java-red?style=for-the-badge&logo=coffeescript&logoColor=white&logoSize=auto)
+  ![MySQL](https://img.shields.io/badge/mysql-%23ff9d00?style=for-the-badge&logo=mysql&logoColor=black&logoSize=auto)
+
 
 <br>
 
@@ -36,8 +40,7 @@ Te convido a observar meus repositórios e conferir como estou nessa jornada!
 <br>
 
 ### 🛸 *Redes*
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/patejo-coder) 
-[![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-oliveira501)
+[![Linkedin](https://img.shields.io/badge/linkedin-white?style=for-the-badge&logo=carrd&logoColor=white&logoSize=auto&labelColor=black&color=blue)](https://www.linkedin.com/in/matheus-oliveira501)
 [![Frontend Mentor](https://img.shields.io/badge/frontend_mentor-white?style=for-the-badge&logo=frontendmentor&logoColor=white&labelColor=black&color=pink)](https://www.frontendmentor.io/profile/patejo-coder)
 
 <br>
@@ -45,7 +48,7 @@ Te convido a observar meus repositórios e conferir como estou nessa jornada!
 <br>
 
 <div align="center">
-<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2NhM2hqMGJzbGJwajh6YWQ2eHgyZXgyajVwdXNoYTV1em10Zjk5MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JUwa2qSoTwcxv0gFJh/giphy.webp" width="500px" height="350px" />
+<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2NhM2hqMGJzbGJwajh6YWQ2eHgyZXgyajVwdXNoYTV1em10Zjk5MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JUwa2qSoTwcxv0gFJh/giphy.webp" width="600px" height="450px" />
 </div>
 
 <br>
