@@ -1,11 +1,12 @@
-# Olá, eu sou o Matheus										
-![Vizualizações do perfil](https://komarev.com/ghpvc/?username=patejo-coder&style=for-the-badge&color=blue) 	
+# Olá, seja bem vindo!										
 
-### ✏️ *Um pouco sobre mim*
+### ✏️ *Sobre mim*
 
-**Sou fascinado por tecnologia 👨‍💻** e por tudo que ela é capaz de nos proporcionar, no momento estou cursando ***"Ciências da Computação".*** 
+Eu me chamo **Matheus** e moro em **São Paulo - SP**.
 
-Estou iniciando no mundo da progamação, e me divirto com o fato de que *há sempre algo novo a ser aprendido 📚*, tenho alguns conhecimnetos no *Front-end:* **(HTML 5 / CSS 3 / JS)**, e tambem já conheço um pouco de ***Java e SQL.***
+Sou fascinado pela tecnologia e pelas possibilidades que ela nos fornece para transformar ideias em soluções. Atualmente estou cursando **Ciência da Computação**, e meu objetivo é adquirir os conhecimentos e habilidades necessárias que vão me permitir transformar minhas ideias em soluções tecnológicas para resolver desde problemas simples do dia a dia até problemas mais complexos.
+
+Te convido a observar meus repositórios e conferir como estou nessa jornada!
 
 <br>
 
@@ -26,7 +27,7 @@ Estou iniciando no mundo da progamação, e me divirto com o fato de que *há se
 
 <br>
 
-**[Portfolio Matheus](https://patejo-coder.github.io/patejo-coder/)**
+**[Meu Portfolio](https://patejo-coder.github.io/patejo-coder/)**
 
 <br>
 
@@ -34,19 +35,8 @@ Estou iniciando no mundo da progamação, e me divirto com o fato de que *há se
  
 <br>
 
-### 📊 *Status no Github*
-<div align="center">
-	
-<img src="https://github-readme-stats.vercel.app/api?locale=pt-br&username=patejo-coder&theme=neon&rank_icon=github&border_color=7c7c7c&ring_color=00c4b1&text_color=ffffff&show_icons=true" width="450px" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=patejo-coder&theme=neon&langs_count=4&layout=normal&locale=pt-br&border_color=7c7c7c&text_color=ffffff" height="188px" />
-</div>
-
-<br>
-<br>
-
 ### 🛸 *Redes*
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/patejo-coder) 
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/patejo_dono/) 
 [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-oliveira501)
 [![Frontend Mentor](https://img.shields.io/badge/frontend_mentor-white?style=for-the-badge&logo=frontendmentor&logoColor=white&labelColor=black&color=pink)](https://www.frontendmentor.io/profile/patejo-coder)
 
@@ -56,4 +46,14 @@ Estou iniciando no mundo da progamação, e me divirto com o fato de que *há se
 
 <div align="center">
 <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2NhM2hqMGJzbGJwajh6YWQ2eHgyZXgyajVwdXNoYTV1em10Zjk5MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JUwa2qSoTwcxv0gFJh/giphy.webp" width="500px" height="350px" />
+</div>
+
+<br>
+<br>
+<br>
+
+<div align="right">
+	
+![Vizualizações do perfil](https://komarev.com/ghpvc/?username=patejo-coder&style=for-the-badge&color=blue) 
+
 </div>
